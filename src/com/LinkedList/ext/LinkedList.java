@@ -1,6 +1,9 @@
 package com.LinkedList.ext;
 
+import org.w3c.dom.Node;
+
 public class LinkedList {
+
 	private Node head;
 
 	public class Node {
@@ -25,7 +28,7 @@ public class LinkedList {
 		}
 
 	}
-
+  
 	public void push(int data) {
 		Node newnode = new Node();
 		newnode.data = data;
@@ -42,5 +45,4 @@ public class LinkedList {
 			temp = temp.next;
 		}
 	}
-
 }
