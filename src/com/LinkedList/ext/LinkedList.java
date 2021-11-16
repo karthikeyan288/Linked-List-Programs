@@ -36,6 +36,7 @@ public class LinkedList {
 		head = newnode;
 	}
 
+
 	public void insert(int position, int data) {
 		Node newnode = new Node();
 		newnode.data = data;
