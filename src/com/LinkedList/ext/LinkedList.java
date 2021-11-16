@@ -28,6 +28,13 @@ public class LinkedList {
 		}
 
 	}
+  
+	public void push(int data) {
+		Node newnode = new Node();
+		newnode.data = data;
+		newnode.next = head;
+		head = newnode;
+	}
 
 	public void print() {
 		Node temp = head;
