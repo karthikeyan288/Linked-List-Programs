@@ -28,12 +28,30 @@ public class LinkedList {
 		}
 
 	}
-  
+
 	public void push(int data) {
 		Node newnode = new Node();
 		newnode.data = data;
 		newnode.next = head;
 		head = newnode;
+	}
+
+
+	public void insert(int position, int data) {
+		Node newnode = new Node();
+		newnode.data = data;
+		newnode.next = null;
+
+		if (position < 1) {
+			System.out.println("invalied data");
+			return;
+		}
+		Node temp = head;
+		for (int i = 0; i < position - 1; i++) {
+			temp = temp.next;
+		}
+		newnode.next = temp.next;
+		temp.next = newnode;
 	}
 
 	public void print() {
