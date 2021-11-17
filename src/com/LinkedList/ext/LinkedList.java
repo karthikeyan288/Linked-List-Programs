@@ -36,7 +36,6 @@ public class LinkedList {
 		head = newnode;
 	}
 
-
 	public void insert(int position, int data) {
 		Node newnode = new Node();
 		newnode.data = data;
@@ -54,13 +53,15 @@ public class LinkedList {
 		temp.next = newnode;
 	}
 
+	public void popFirst() {
+		head =head.next;
+	}
+
 	public void print() {
 		Node temp = head;
 		System.out.println("Linked list :");
-
-		while (temp != null) {
+      while (temp != null) {
 			System.out.print(temp.data + " ->");
 			temp = temp.next;
 		}
 	}
-}
