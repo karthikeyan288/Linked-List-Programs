@@ -1,7 +1,6 @@
 package com.LinkedList.ext;
 
 public class Main {
-
 	
 	public static void main(String[] args) {
 
@@ -9,9 +8,14 @@ public class Main {
 		list.add(56);
 		list.add(70);
 		list.insert(1, 30);
-		list.popFirst();
 
-		list.print();
+		list.poplast();
+    list.popFirst();
+
+    list.print();
   }
 
+
 }
+
+
