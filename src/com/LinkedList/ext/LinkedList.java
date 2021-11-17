@@ -52,7 +52,7 @@ public class LinkedList {
 		newnode.next = temp.next;
 		temp.next = newnode;
 	}
-	
+
 	public void popFirst() {
 		head =head.next;
 	}
@@ -60,10 +60,8 @@ public class LinkedList {
 	public void print() {
 		Node temp = head;
 		System.out.println("Linked list :");
-
-		while (temp != null) {
+      while (temp != null) {
 			System.out.print(temp.data + " ->");
 			temp = temp.next;
 		}
 	}
-}
