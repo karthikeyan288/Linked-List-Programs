@@ -54,6 +54,7 @@ public class LinkedList {
 	}
 
 	public void popFirst() {
+
 		head = head.next;
 	}
 
@@ -71,15 +72,16 @@ public class LinkedList {
 		}
 		int value = temp.next.data;
 		temp.next = null;
+		head =head.next;
 	}
 
 	public void print() {
 		Node temp = head;
 		System.out.println("Linked list :");
-
-		while (temp != null) {
-			System.out.print(temp.data + " ->");
-			temp = temp.next;
+      while (temp != null) {
+      System.out.print(temp.data + " ->");
+		  temp = temp.next;
 		}
-	}
 }
+
+

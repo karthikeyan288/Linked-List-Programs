@@ -8,9 +8,14 @@ public class Main {
 		list.add(56);
 		list.add(70);
 		list.insert(1, 30);
-		list.poplast();
 
-		list.print();
+		list.poplast();
+    list.popFirst();
+
+    list.print();
   }
 
+
 }
+
+
