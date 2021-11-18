@@ -10,6 +10,10 @@ public class Main {
 		list.insert(1, 30);
 
 		list.poplast();
+		
+		list.Search(56);
+ 
+		list.poplast();
     list.popFirst();
 
     list.print();
@@ -17,5 +21,6 @@ public class Main {
 
 
 }
+
 
 

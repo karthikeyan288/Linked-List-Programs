@@ -54,7 +54,6 @@ public class LinkedList {
 	}
 
 	public void popFirst() {
-
 		head = head.next;
 	}
 
@@ -72,16 +71,42 @@ public class LinkedList {
 		}
 		int value = temp.next.data;
 		temp.next = null;
+	}
+	
+	public boolean Search(int data) {
+		if(head==null) {
+			System.out.println("The list is empty");
+		}
+		Node temp = head;
+		boolean isfound = false;
+		while(temp != null) {
+			if (temp.data==data) {
+				isfound=true;
+				break;
+			}
+		    temp=temp.next;
+		}
+		return isfound;
+	}	
 		head =head.next;
 	}
 
-	public void print() {
+ public void print() {
 		Node temp = head;
 		System.out.println("Linked list :");
+
+
+		while (temp != null) {
+			System.out.print(temp.data + " ->");
+			temp = temp.next;
+		}
+	}
+}
       while (temp != null) {
       System.out.print(temp.data + " ->");
 		  temp = temp.next;
 		}
 }
+
 
 
