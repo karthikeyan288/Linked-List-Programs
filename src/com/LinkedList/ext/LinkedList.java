@@ -88,13 +88,13 @@ public class LinkedList {
 		}
 		return isfound;
 	}	
-		
-	
-	
+		head =head.next;
+	}
 
-	public void print() {
+ public void print() {
 		Node temp = head;
 		System.out.println("Linked list :");
+
 
 		while (temp != null) {
 			System.out.print(temp.data + " ->");
@@ -102,3 +102,11 @@ public class LinkedList {
 		}
 	}
 }
+      while (temp != null) {
+      System.out.print(temp.data + " ->");
+		  temp = temp.next;
+		}
+}
+
+
+
