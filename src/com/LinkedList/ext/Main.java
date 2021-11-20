@@ -8,10 +8,16 @@ public class Main {
 		list.add(56);
 		list.add(70);
 		list.insert(1, 30);
-		list.insert(2, 40);
- 
-		list.print();
-  }
 
+		list.insert(2, 40);
+
+		list.poplast();
+		
+		list.Search(56);
+ 
+		list.poplast();
+    list.popFirst();
+
+    list.print();
 
 }
